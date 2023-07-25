@@ -1,4 +1,4 @@
-// Anonyms function
+// IIFE function
 
 // 1.1 (Printing Odd numbers in an array)
 

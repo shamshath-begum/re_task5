@@ -2,112 +2,112 @@
 
 // 1.1 (Printing Odd numbers in an array)
 
-let oddNumber= (n) => {
-    let b=[];
+let oddNumber2= (n) => {
+    let b2=[];
     for (e=0; e<n; e++){
         if (e%2 !==0){
-            b.push(e);
+            b2.push(e);
         }
     }
-        console.log(b);
+        console.log(b2);
 }
-oddNumber(10)
+oddNumber2(10)
 
 // 1.2 (Convert all the strings to title caps in a string array)
 
-let captilize = (names) => {
-    let namesarray= [];
+let captilize1 = (names) => {
+    let namesarray2= [];
     for (i=0; i<names.length; i++){
         let cap = names[i][0].toUpperCase()+names[i].slice(1);
-        namesarray.push(cap);
+        namesarray2.push(cap);
     }    
-    console.log(namesarray);
+    console.log(namesarray2);
 }
-captilize(["ganesh", "babu", "ravi", "sankar"]);
+captilize1(["ganesh", "babu", "ravi", "sankar"]);
 
 // 1.3 (Sum of all numbers in an array)
 
-array = [1,2,3,4,5,6,7,8,9];
-let addingArray = () => {
-   let sum = 0;
-   for (o=0; o<array.length; o++) {
-        sum+= array[o];
+array2 = [1,2,3,4,5,6,7,8,9];
+let addingArray2 = () => {
+   let sum2= 0;
+   for (o=0; o<array2.length; o++) {
+        sum2+= array2[o];
    }
-   console.log(sum);
+   console.log(sum2);
 }
-addingArray(array);
+addingArray2(array2);
 
 // 1.4 (Return all the prime numbers in an array)
 
-let numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, 17, 19, 23, 29, 31, 37]
-    let primeNumber = () => {
-        numArray = numArray.filter((number) => {
+let numArray2 = [2, 3, 4, 5, 6, 7, 8, 9, 10, 17, 19, 23, 29, 31, 37]
+    let primeNumber2 = () => {
+        numArray2 = numArray2.filter((number) => {
             for (var i = 2; i <= Math.sqrt(number); i++) {
             if (number % i === 0) return false;
           }
           return true;
         });
-        console.log(numArray);
+        console.log(numArray2);
     }
-primeNumber(); 
+primeNumber2(); 
 
 // 1.5 (Return all the palindromes in an array)
 
-let palindrome = (wordarray) => {
-    let r;
-    let reverse = [];
+let palindrome2 = (wordarray) => {
+    let r2;
+    let reverse2 = [];
     for (i=0; i<wordarray.length; i++){
-        r = wordarray[i].split('').reverse().join('');
-        if (wordarray[i] === r) {
-            reverse.push(r);
+        r2 = wordarray[i].split('').reverse().join('');
+        if (wordarray[i] === r2) {
+            reverse2.push(r2);
         }
     }
     // console.log(wordarray);
-    console.log(reverse);   
+    console.log(reverse2);   
 }
-palindrome(["ganesh","malayalam","HeH","Heh","baab"])
+palindrome2(["ganesh","malayalam","HeH","Heh","baab"])
 
 // 1.6 (Return median of two sorted array of the same size)
 
-let numberAr1 = [25, 75, 50, 125, 100];
-let numberAr2 = [150, 200, 175, 250, 225];
+let numberAr12 = [25, 75, 50, 125, 100];
+let numberAr22 = [150, 200, 175, 250, 225];
 
-let findMedian = () => {
-    let n1 = numberAr1.length;
-    let n2 = numberAr2.length;
-    if (n1 == n2){
-        let m = numberAr1.concat(numberAr2)
-        m.sort((a, b) => a-b);
-        let n = (m[(m.length/2)-1]+m[m.length/2]);
+let findMedian2 = () => {
+    let n12 = numberAr12.length;
+    let n22 = numberAr22.length;
+    if (n12 == n22){
+        let m2 = numberAr12.concat(numberAr22)
+        m2.sort((a, b) => a-b);
+        let n2 = (m2[(m2.length/2)-1]+m2[m2.length/2]);
         // console.log(m);
-        console.log(n/2);
+        console.log(n2/2);
     }
     else console.log("Two array are not equal");
 }
-findMedian();
+findMedian2();
 
 // 1.7 (Remove duplicates from an array)
 
-let chars = ['A', 'B', 'A', 'C', 'B'];
-let removeDuplicate = () => {
-    let uniqueChars = [];
-    chars.forEach((c) => {
-    if (!uniqueChars.includes(c)) {
-        uniqueChars.push(c);
+let chars2 = ['A', 'B', 'A', 'C', 'B'];
+let removeDuplicate2 = () => {
+    let uniqueChars2= [];
+    chars2.forEach((c) => {
+    if (!uniqueChars2.includes(c)) {
+        uniqueChars2.push(c);
     }
 });
-console.log(uniqueChars);
+console.log(uniqueChars2);
 }
-removeDuplicate();
+removeDuplicate2();
 
 // 1.8 (Rotate an array by k times)
 
-let rotateRight = (items, k) => {
+let rotateRight2 = (items, k) => {
     for (i=0; i<k; i++){
-        let last = items.pop();
-        items.unshift(last);
+        let last2 = items.pop();
+        items.unshift(last2);
         // return items;    
     }
     console.log(items);
 }
-rotateRight(["cpu", "moniter", "mouse", "keyboard", "pendrive"], 2)
+rotateRight2(["cpu", "moniter", "mouse", "keyboard", "pendrive"], 2)
